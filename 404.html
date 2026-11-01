@@ -1,27 +1,29 @@
 <!doctype html>
 <html lang="ko">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>CHARACTER LAB · 준비 중</title>
-<style>
-  :root { --bg:#f6f4ef; --ink:#1d1d1f; --sub:#6b6b70; }
-  @media (prefers-color-scheme: dark) { :root { --bg:#141416; --ink:#f2f2f2; --sub:#9a9aa0; } }
-  html,body { margin:0; height:100%; background:var(--bg); color:var(--ink);
-    font-family: "Pretendard", "Apple SD Gothic Neo", "Malgun Gothic", system-ui, sans-serif; }
-  main { min-height:100%; display:flex; flex-direction:column; align-items:center; justify-content:center;
-    text-align:center; padding:0 16px; box-sizing:border-box; }
-  h1 { font-size:clamp(2.2rem, 8vw, 4.5rem); letter-spacing:.08em; margin:0 0 .4em; }
-  p { margin:.3em 0; color:var(--sub); line-height:1.6; }
-  .soon { margin-top:1.6em; color:var(--ink); font-weight:600; }
-</style>
-</head>
-<body>
-<main>
-  <h1>CHARACTER LAB</h1>
-  <p>경기과학기술대학교 웹툰일러스트학과</p>
-  <p>「이미지 생성툴 활용」 2학년 중간 발표전 가상 전시장</p>
-  <p class="soon">전시장을 준비하고 있습니다.</p>
-</main>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>CHARACTER LAB · 경기과학기술대학교 웹툰일러스트학과 이미지 생성툴 활용 2학년 중간 발표전</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <meta name="theme-color" content="#1B1F3B" />
+    <meta name="description" content="경기과학기술대학교 웹툰일러스트학과 2학년 「이미지 생성툴 활용」 중간 발표전. A·B·C반 학생들의 캐릭터 설정표·디자인 시트·메인 배경·발표 자료를 가상 전시장의 개인 부스에서 만납니다." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;500;600;700&family=Gowun+Batang:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <script type="module" crossorigin src="./assets/index-cetlKnlp.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-zg8NHtjn.css">
+  </head>
+  <body>
+    <div id="root"></div>
+    <!-- 배포 직후 옛 index.html 이 캐시에 남아 사라진 번들을 가리키면 한 번만 주소를 바꿔 새로 받는다 -->
+    <script>
+      window.addEventListener("error", function (e) {
+        var t = e && e.target; if (!t || (t.tagName !== "SCRIPT" && t.tagName !== "LINK")) return;
+        if (sessionStorage.getItem("gtec002_reloaded")) return; sessionStorage.setItem("gtec002_reloaded", "1");
+        location.replace(location.pathname + "?r=" + Date.now() + location.hash);
+      }, true);
+      window.addEventListener("load", function () { setTimeout(function () { if (document.getElementById("root").childElementCount) sessionStorage.removeItem("gtec002_reloaded"); }, 4000); });
+    </script>
+  </body>
 </html>
